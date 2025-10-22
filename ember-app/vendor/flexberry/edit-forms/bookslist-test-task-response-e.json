@@ -1,0 +1,14 @@
+﻿{
+  "propertyLookup": [],
+  "external": false,
+  "caption": "Response",
+  "name": "BookslistTestTaskResponseE",
+  "className": "ResponseE",
+  "attrs": [],
+  "projections": [
+    {
+      "modelName": "bookslist-test-task-response",
+      "modelProjection": "ResponseE"
+    }
+  ]
+}

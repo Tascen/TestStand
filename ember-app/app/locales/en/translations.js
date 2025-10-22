@@ -5,12 +5,16 @@ import TimepathTestTaskResponseLForm from './forms/timepath-test-task-response-l
 import TimepathTestTaskResponseEForm from './forms/timepath-test-task-response-e';
 import TimepathTestTaskResponseModel from './models/timepath-test-task-response';
 
+import BookslistTestTaskResponseLForm from './forms/bookslist-test-task-response-l';
+import BookslistTestTaskResponseEForm from './forms/bookslist-test-task-response-e';
+import BookslistTestTaskResponseModel from './models/bookslist-test-task-response';
+
 const translations = {};
 $.extend(true, translations, EmberFlexberryTranslations);
 
 $.extend(true, translations, {
   models: {
-    'timepath-test-task-response': TimepathTestTaskResponseModel,
+    'bookslist-test-task-response': BookslistTestTaskResponseModel,
   },
 
   'application-name': 'Application caption',
@@ -96,6 +100,8 @@ $.extend(true, translations, {
       'delete-success-message': 'Object deleted',
       'delete-error-message-caption': 'Delete operation failed'
     },
+    'bookslist-test-task-response-l': BookslistTestTaskResponseLForm,
+    'bookslist-test-task-response-e': BookslistTestTaskResponseEForm,
     'timepath-test-task-response-l': TimepathTestTaskResponseLForm,
     'timepath-test-task-response-e': TimepathTestTaskResponseEForm,
   },

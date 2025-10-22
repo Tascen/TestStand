@@ -18,6 +18,12 @@ export default Controller.extend({
           caption: 'Форма обратной связи',
           title: 'Форма обратной связи',
           children: null
+        },
+        {
+          link: 'bookslist-test-task-response-e.new',
+          caption: 'Форма обратной связи 2',
+          title: 'Форма обратной связи 2',
+          children: null
         }
       ]
     };
