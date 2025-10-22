@@ -1,41 +1,12 @@
 <h3 class="ui header">{{t "forms.bookslist-test-task-response-e.caption"}}</h3>
-{{#if model.isNew}}
-<form class="ui form flexberry-vertical-form" role="form">
-  {{flexberry-error error=error}}
-  <div class="field">
-    <div class="sixteen wide">
-      {{flexberry-validationsummary errors=(v-get validationObject "messages")}}
-    </div>
+{{#if this.model.length}}
+  <div class="books-isGrided">
+    {{#each this.model as |book|}}
+      <Book-card @book={{book}} />
+    {{/each}}
   </div>
-  <div class="field">
-    <div class="flexberry-edit-panel">
-      {{#if model.isNew}}
-        <button class="ui button save-button" {{action "save"}}>
-          Отправить
-        </button>
-      {{/if}}
-    </div>
-  </div>
-  <div class="field">
-    {{flexberry-field
-      readonly=readonly
-      value=model.fIO
-      class=(if (v-get validationObject "fIO" "isInvalid") "error")
-      label='ФИО'
-    }}
-    {{flexberry-validationmessage error=(v-get validationObject "fIO" "messages")}}
-  </div>
-    <div class="field">
-    {{flexberry-field
-      readonly=readonly
-      value=model.email
-      class=(if (v-get validationObject "email" "isInvalid") "error")
-      label='Email'
-    }}
-    {{flexberry-validationmessage error=(v-get validationObject "email" "messages")}}
-  </div>
-
-</form>
 {{else}}
-<div>Спасибо! Вы справились!</div> <div>{{t 'forms.bookslist-test-task-response-e.next-step'}}</div>
-  {{/if}}
+  <div class="empty-state">
+    <p>Книги не найдены</p>
+  </div>
+{{/if}}

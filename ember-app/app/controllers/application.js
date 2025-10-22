@@ -21,8 +21,8 @@ export default Controller.extend({
         },
         {
           link: 'bookslist-test-task-response-e.new',
-          caption: 'Форма обратной связи 2',
-          title: 'Форма обратной связи 2',
+          caption: 'Список книг',
+          title: 'Список книг',
           children: null
         }
       ]
