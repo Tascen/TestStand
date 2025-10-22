@@ -1,6 +1,6 @@
 import { moduleFor, test } from 'ember-qunit';
 
-moduleFor('controller:timepath-test-task-response-e', 'Unit | Controller | timepath-test-task-response-e', {
+moduleFor('controller:bookslist-test-task-response-e', 'Unit | Controller | bookslist-test-task-response-e', {
   // Specify the other units that are required for this test.
   needs: [
     'controller:flexberry-file-view-dialog',

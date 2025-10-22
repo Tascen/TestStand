@@ -1,6 +1,35 @@
-.books-isGrided {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    padding: 20px 0;
+:root {
+    // --table-bookslist__border-color: 
+    // --table-bookslist__th__background-color: 
+    --table-bookslist__tr__background-color: transparent;
+}
+
+.bookslist__btn-isToggleTableColor {
+    margin-inline: 0px !important;
+}
+
+table.bookslist {
+    border: 1px solid var(--table-bookslist__border-color, #dededf);
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 1px;
+    text-align: left;
+}
+
+table.bookslist th {
+    border: 1px solid var(--table-bookslist__border-color, #dededf);
+    background-color: var(--table-bookslist__th__background-color, #eceff1);
+    color: #000000;
+    padding: 5px;
+}
+
+table.bookslist td {
+    padding: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--table-bookslist__border-color, #dededf);
+    background-color: var(--table-bookslist__tr__background-color);
+    color: rgb(0, 0, 0);
 }

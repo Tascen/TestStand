@@ -1,8 +1,5 @@
-// import EditFormController from 'ember-flexberry/controllers/edit-form';
+import ListFormController from 'ember-flexberry/controllers/list-form';
 
-// export default EditFormController.extend({
-//   parentRoute: 'bookslist-test-task-response',
-// });
-import Controller from '@ember/controller';
-
-export default class BookDetailController extends Controller {}
+export default ListFormController.extend({
+  parentRoute: 'bookslist-test-task-response',
+});

@@ -1,12 +1,31 @@
 <h3 class="ui header">{{t "forms.bookslist-test-task-response.caption"}}</h3>
-{{#if this.model.length}}
-  <div class="books-isGrided">
-    {{#each this.model as |book|}}
-      <Book-row @book={{book}} />
-    {{/each}}
-  </div>
+<button class="ui button bookslist__btn-isToggleTableColor" {{action "toggleTableColor" on="click"}}>
+  {{t "forms.bookslist-test-task-response.changeColorBtn"}}
+</button>
+<br>
+<br>
+{{#if model.length}}
+  {{!-- TODO: Заменить статического отображение столбцов связанных с полями обьекта book на динамическое --}}
+  <table class="bookslist" style="--table-bookslist__border-color: {{get this.rundomColors "0"}}; --table-bookslist__th__background-color: {{get this.rundomColors "1"}};">
+    <thead>
+      <tr>
+        <th>{{t "forms.bookslist-test-task-response.th.name"}}</th>
+        <th>{{t "forms.bookslist-test-task-response.th.author"}}</th>
+        <th>{{t "forms.bookslist-test-task-response.th.pages"}}</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each this.model as |book|}}
+        <tr>
+          <td>{{book.name}}</td>
+          <td>{{book.author}}</td>
+          <td>{{book.pages}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
 {{else}}
   <div class="empty-state">
-    <p>Книги не найдены</p>
+    <p>{{t "forms.bookslist-test-task-response.fail"}}</p>
   </div>
 {{/if}}

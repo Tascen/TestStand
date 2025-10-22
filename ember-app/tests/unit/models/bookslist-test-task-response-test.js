@@ -1,9 +1,9 @@
 import { moduleForModel, test } from 'ember-qunit';
 
-moduleForModel('timepath-test-task-response', 'Unit | Model | timepath-test-task-response', {
+moduleForModel('bookslist-test-task-response', 'Unit | Model | bookslist-test-task-response', {
   // Specify the other units that are required for this test.
   needs: [
-    'model:timepath-test-task-response',
+    'model:bookslist-test-task-response',
     'validator:ds-error',
     'validator:presence',
     'validator:number',
