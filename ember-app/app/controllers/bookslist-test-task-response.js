@@ -5,12 +5,4 @@
 // });
 import Controller from '@ember/controller';
 
-export default class BookDetailController extends Controller {
-  get isBookLoaded() {
-    return !!this.model;
-  }
-
-  goBack() {
-    this.router.transitionTo('bookslist-test-task-response/new');
-  }
-}
+export default class BookDetailController extends Controller {}

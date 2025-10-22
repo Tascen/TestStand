@@ -1,8 +1,8 @@
-<h3 class="ui header">{{t "forms.bookslist-test-task-response-e.caption"}}</h3>
+<h3 class="ui header">{{t "forms.bookslist-test-task-response.caption"}}</h3>
 {{#if this.model.length}}
   <div class="books-isGrided">
     {{#each this.model as |book|}}
-      <Book-card @book={{book}} />
+      <Book-row @book={{book}} />
     {{/each}}
   </div>
 {{else}}

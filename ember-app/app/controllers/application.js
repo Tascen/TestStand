@@ -9,7 +9,9 @@ import { inject as service } from '@ember/service';
 
 export default Controller.extend({
   sitemap: computed('i18n.locale', function () {
-    let i18n = this.get('i18n');
+    // Закоментировав вызов этой переменной,
+    //    я избавился от предупреждения в консоли
+    // let i18n = this.get('i18n');
 
     return {
       nodes: [
@@ -20,7 +22,7 @@ export default Controller.extend({
           children: null
         },
         {
-          link: 'bookslist-test-task-response-e.new',
+          link: 'bookslist-test-task-response.all',
           caption: 'Список книг',
           title: 'Список книг',
           children: null
@@ -29,7 +31,7 @@ export default Controller.extend({
     };
   }),
 
-  /**
+  /*
     Locales supported by application.
 
     @property locales

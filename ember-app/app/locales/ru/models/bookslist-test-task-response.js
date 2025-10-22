@@ -1,15 +1,10 @@
 export default {
   projections: {
-    ResponseE: {
+    ResponseAll: {
       fIO: {
         __caption__: ''
       }
     },
-    ResponseL: {
-      fIO: {
-        __caption__: 'FIO'
-      }
-    }
   },
   validations: {
     fIO: {

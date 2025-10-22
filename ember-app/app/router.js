@@ -6,10 +6,8 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function () {
-  this.route('bookslist-test-task-response-e',
-  { path: 'bookslist-test-task-response-e/:id' });
-  this.route('bookslist-test-task-response-e.new',
-  { path: 'bookslist-test-task-response-e/new' });
+  this.route('bookslist-test-task-response.all',
+  { path: 'bookslist-test-task-response/all' });
   this.route('timepath-test-task-response-e',
   { path: 'timepath-test-task-response-e/:id' });
   this.route('timepath-test-task-response-e.new',

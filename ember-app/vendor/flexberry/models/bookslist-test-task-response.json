@@ -20,26 +20,12 @@
   "hasMany": [],
   "projections": [
     {
-      "name": "ResponseE",
-      "modelName": "bookslist-test-task-response",
+      "name": "ResponseAll",
+      "modelName": "bookslist-test-task-response-all",
       "attrs": [
         {
           "name": "fIO",
           "caption": "",
-          "hidden": false,
-          "index": 0
-        }
-      ],
-      "belongsTo": [],
-      "hasMany": []
-    },
-    {
-      "name": "ResponseL",
-      "modelName": "bookslist-test-task-response",
-      "attrs": [
-        {
-          "name": "fIO",
-          "caption": "FIO",
           "hidden": false,
           "index": 0
         }
