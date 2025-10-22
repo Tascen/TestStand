@@ -4,6 +4,8 @@ import EmberFlexberryTranslations from 'ember-flexberry/locales/ru/translations'
 import TimepathTestTaskResponseLForm from './forms/timepath-test-task-response-l';
 import TimepathTestTaskResponseEForm from './forms/timepath-test-task-response-e';
 import TimepathTestTaskResponseModel from './models/timepath-test-task-response';
+import BookslistTestTaskResponseAll from './forms/bookslist-test-task-response';
+import BookslistTestTaskResponseModel from './models/bookslist-test-task-response';
 
 const translations = {};
 $.extend(true, translations, EmberFlexberryTranslations);
@@ -11,6 +13,7 @@ $.extend(true, translations, EmberFlexberryTranslations);
 $.extend(true, translations, {
   models: {
     'timepath-test-task-response': TimepathTestTaskResponseModel,
+    'bookslist-test-task-response': BookslistTestTaskResponseModel,
   },
 
   'application-name': 'Тестовое задание',
@@ -96,6 +99,7 @@ $.extend(true, translations, {
       'delete-success-message': 'Объект удален',
       'delete-error-message-caption': 'Ошибка удаления'
     },
+    'bookslist-test-task-response': BookslistTestTaskResponseAll,
     'timepath-test-task-response-l': TimepathTestTaskResponseLForm,
     'timepath-test-task-response-e': TimepathTestTaskResponseEForm,
   },
